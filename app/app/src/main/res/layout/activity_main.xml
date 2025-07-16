@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#FFFFFF"
+  >
+
+     <LinearLayout
+         android:padding="24dp"
+         android:layout_centerInParent="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/titleLogin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Login"
+             android:textSize="24sp"
+             android:textStyle="bold"
+             android:fontFamily="@font/robotoregular"
+             android:textColor="#000000"
+             android:layout_marginBottom="32dp"
+             android:gravity="center_horizontal"
+             android:layout_gravity="center_horizontal" />
+
+         <!-- Email -->
+         <EditText
+             android:id="@+id/emailEditText"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:hint="Email"
+             android:padding="16dp"
+             android:fontFamily="@font/robotoregular"
+             android:background="@drawable/edittext_background"
+             android:textColorHint="#888888"
+             android:inputType="textEmailAddress"
+             android:layout_marginBottom="16dp" />
+
+         <!-- Password with Eye Icon -->
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginBottom="32dp"
+             android:background="@drawable/edittext_background">
+
+             <EditText
+                 android:id="@+id/passwordEditText"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="Password"
+                 android:paddingStart="16dp"
+                 android:fontFamily="@font/robotoregular"
+
+                 android:paddingEnd="48dp"
+                 android:textColorHint="#888888"
+                 android:inputType="textPassword"
+                 android:background="@android:color/transparent" />
+
+             <ImageView
+                 android:id="@+id/passwordToggle"
+                 android:layout_width="24dp"
+                 android:layout_height="24dp"
+                  android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginEnd="12dp" />
+         </RelativeLayout>
+
+
+         <Button
+             android:id="@+id/verifyButton"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="Login"
+             android:fontFamily="@font/robotobold"
+
+             android:textColor="#FFFFFF"
+             android:background="@drawable/button_background" />
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By "
+            android:textColor="#A0A0A0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROVIZIT"
+            android:textColor="#3E4A66"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
